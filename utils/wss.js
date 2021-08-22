@@ -8,11 +8,13 @@ import {
 
 let socket = null;
 const SERVER = "https://roomie.up.railway.app:7525";
+// const SERVER = "http://localhost:3001";
 
 export const connectWithSocketIOServer = () => {
   const connection = connectionVar();
   const participants = participantsVar();
 
+  console.log(SERVER);
   socket = io(SERVER);
   socket.on("connect", () => {
     console.log(`succesfully connected: ${socket.id}`);
