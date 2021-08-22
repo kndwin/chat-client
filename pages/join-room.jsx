@@ -19,7 +19,7 @@ const JoinRoom = (props) => {
 
   const joinRoom = async () => {
     console.log({ roomId });
-    const URL = `http://localhost:3001/api/room-exist/${roomId}`;
+    const URL = `http://roomie.up.railway.app:7525/api/room-exist/${roomId}`;
     const res = await fetch(URL, {
       method: "GET",
     });
