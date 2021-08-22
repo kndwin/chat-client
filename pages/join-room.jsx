@@ -18,7 +18,7 @@ const JoinRoom = (props) => {
   }, []);
 
   const joinRoom = async () => {
-		const URL = `http://roomie.up.railway.app:3001/api/room-exist/${roomId}`;
+    const URL = `https://roomie.up.railway.app:3001/api/room-exist/${roomId}`;
     // const URL = `http://localhost:3001/api/room-exist/${roomId}`;
     const res = await fetch(URL, {
       method: "GET",
@@ -150,7 +150,8 @@ const Error = () => {
         <div
           style={{ boxShadow: "7px 7px #7F1D1D" }}
           className="mt-4 w-96 text-center font-bold text-lg text-red-900 
-					border-red-900 border-2 my-2 p-2 rounded-lg relative">
+					border-red-900 border-2 my-2 p-2 rounded-lg relative"
+        >
           {error}
         </div>
       )}

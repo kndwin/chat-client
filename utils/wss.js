@@ -7,7 +7,7 @@ import {
 } from "./webRTCHandler";
 
 let socket = null;
-const SERVER = "http://roomie.up.railway.app:3001";
+const SERVER = "https://roomie.up.railway.app:3001";
 // const SERVER = "http://localhost:3001";
 
 export const connectWithSocketIOServer = () => {
